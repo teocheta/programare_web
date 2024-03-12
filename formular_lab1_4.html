@@ -1,0 +1,292 @@
+<!DOCTYPE HTML 4.01 Transitional>
+<html lang="ro">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>
+            Formular înscriere
+        </title>
+    </head>
+    <body>
+        <center>
+            <h1>Înscriere la clubul de carte </h1>
+        </center>
+
+            <img  src="C:\Users\teodo\OneDrive\Pictures\book-8190895_1280 (1).webp" alt="O carte" width="300" height="200">
+        
+
+        <form action="x.php" method="post">
+            <div>
+                <fieldset>
+                
+                    <legend align="left"> Informații personale </legend>
+            
+                    <p>
+                        <label for="nume">Nume:</label><br>
+                        <input type="text" id="nume" name="nume"><br>
+                        <label for="prenume">Prenume:</label><br>
+                        <input type="text" id="prenume" name="prenume"><br>
+                        <label for="sex_masculin">Sex:</label>
+                        <input type="radio" id="sex_masculin" name="sex" value="M">M
+                        <input type="radio" id="sex_feminin" name="sex" value="F">F<br>
+                    </p>
+
+                    <div>
+                    Data nașterii:
+
+                
+                        <table border="2" cellspacing="0" cellpadding="5">
+
+                            <tr>
+                                <td bgcolor="#00ffff" rowspan="2" valign="top">Ziua:</td>
+                                <td bgcolor="#0000ff" rowspan="2"><input type="text" name="ziua"></td>
+                            </tr>
+
+                            <tr>
+                                <td bgcolor="#00ffff" rowspan="2" valign="middle">
+                                    Luna:
+                                </td>
+                                <td bgcolor="#0000ff" rowspan="2">
+                                    <select>
+                                    <option>Ianuarie</option>
+                                    <option>Februarie</option>
+                                    <option>Martie</option>
+                                    <option>Aprilie</option>
+                                    <option>Mai</option>
+                                    <option>Iunie</option>
+                                    <option>Iulie</option>
+                                    <option>August</option>
+                                    <option>Septembrie</option>
+                                    <option>Octombrie</option>
+                                    <option>Noiembrie</option>
+                                    <option>Decembrie</option>
+                                    </select>
+                                </td>
+                        
+                            </tr>
+
+                            <tr>
+                                <td bgcolor="#00ffff" valign="top">Anul:</td>
+                                <td bgcolor="#0000ff"><input type="text" name="anul"></td>
+                            </tr>
+                    
+                        </table>
+                        
+                    </div>
+                        
+            
+                </fieldset>
+            </div>
+
+            <div>
+                <fieldset>
+                    <legend align="left">Date de contact
+
+                    </legend>
+
+                        <p>
+                            <label for="email">Email:</label><br>
+                            <input type="text" id="email" name="email"><br>
+                            <label for="telefon">Telefon:</label><br>
+                            <input type="text" id="telefon" name="telefon">
+                        </p>
+                        <table border="1" cellspacing="0" cellpadding="3">
+                            <tr>
+                                <td rowspan="3">
+                                    Adresa:
+                                </td>
+                                <td rowspan="3">
+                                    <table border="1" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td>
+                                                Strada:
+                                            </td>
+                                            <td>
+                                                <input type="text" name="strada">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Număr:
+                                            </td>
+                                            <td>
+                                                <input type="text" name="numar">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Cod poștal:
+                                            </td>
+                                            <td>
+                                                <input type="text" name="cod_postal">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Oraș:
+                                </td>
+                                <td>
+                                    <input type="text" name="oras" size="30">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="middle">
+                                    Alte informații:
+                                </td>
+                                <td rowspan="2">
+                                    <textarea name="alte_informatii" cols="30" rows="3"></textarea>
+                                </td>
+                            </tr>
+                            
+                    
+                        </table>
+                </fieldset>
+            </div>
+
+            <div>
+            <fieldset>
+                <legend align="top">Descriere personală</legend>
+                <label for="mesaj">Introduceți o scurtă descriere despre dumneavoastră:</label><br>
+                <textarea id="mesaj" name="mesaj" rows="4" cols="50"></textarea><br>
+            </fieldset>
+            </div>
+            <h2>Informații participare</h2>
+            <table border="1" cellspacing="0" cellpadding="5">
+                <tr>
+                    <td>Nume:</td>
+                    <td colspan="3"><input type="text" name="nume"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td colspan="3"><input type="text" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Abonare la newsletter:</td>
+                    <td><input type="checkbox" name="abonare" value="Da" checked> Da</td>
+                    <td><input type="checkbox" name="abonare" value="Nu"> Nu</td>
+                    <td rowspan="2">
+                        Zi participare: 
+                        <select>
+                            <option>Luni</option>
+                            <option>Marți</option>
+                            <option>Miercuri</option>
+                            <option>Joi</option>
+                            <option>Vineri</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Termeni și condiții:</td>
+                    <td colspan="2"><input type="checkbox" name="abonare" value="Da"> Da</td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <a href="termeni_si_conditii.html" target="_blank">Vezi Termenii și Condițiile</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        Observații:
+                        <input type="text" value="Ex: asteptari, sugestii, idei" readonly><br>
+                        <textarea name="observatii" cols="50" rows="5"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Genuri pe care le vom explora: </td>
+                    <td colspan="3">
+                        <ul>
+                            <li>Roman
+                                <ol>
+                                    <li>Roman clasic</li>
+                                    <li>Roman contemporan</li>
+                                    <li>Roman istoric</li>
+                                    <li>Roman autobiografic</li>
+                                </ol>
+                            </li>
+                            <li>Ficțiune științifică</li>
+                            <li>Fantezie
+                                <ol start="5">
+                                    <li>Urban fantasy</li>
+                                    <li>Epic fantasy</li>
+                                </ol>
+                            </li>
+                            <li>Thriller</li>
+                            <li>Mister</li>
+                            <li>Poezie</li>
+                            <li>Dezvoltare personală</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Deadline înscriere:</td>
+                    <td colspan="3">
+                    <input type="text" name="data" size="20" value="15 aprilie 2024" disabled>
+                    </td>
+                 </tr>
+            </table>
+            <h2>Alte informații</h2>
+            <table border="1" cellspacing="0" cellpadding="5">
+             <tr>
+                <td rowspan="3">
+                    Cum ai aflat de noi?
+                    <ol type="a">
+                        <li>Prieten</li>
+                        <li>Familie</li>
+                        <li>Rețele sociale</li>
+                        <li>Anunț în librărie</li>
+                        <li>Altfel</li>
+                    </ol>
+                    Răspunsul tău:
+                    <input type="text" name="raspuns">
+                </td>
+                
+                </tr>
+            <tr>
+                <td>
+                    <table border="1" cellspacing="0" cellpadding="5">
+            <tr>
+                <td>
+                    Cum ai recomanda mai departe?
+                </td>
+                <td colspan="3">
+                    <select size="3" multiple>
+                        <option selected>Recomandare prieten</option>
+                        <option>Rețele sociale</option>
+                        <option>Anunț în librărie</option>
+                    </select>
+                </td>
+            </tr>
+        <tr>
+        <td rowspan="2">
+            Motivul înscrierii:
+        </td>
+        <td>
+            <input type="text" name="motiv" size="30" value="ex:Dorința de a descoperi noi cărți" readonly>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <textarea cols="20" rows="3"></textarea>
+        </td>
+        <td>
+            Cărți citite(aproximativ):
+        </td>
+        <td>
+            <input type="text" name="numar">
+        </td>
+    </tr>
+
+    </table>
+
+    </table>
+
+            <div>
+                <input type="submit" value="Trimite">
+            </div>
+        </form>
+    </body>    
+
+</html>
